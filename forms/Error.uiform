@@ -1,0 +1,37 @@
+﻿{
+  "Metadata": {
+    "Id": "63200d54-a4ce-49e6-be6a-5c1ab9351006",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "Error",
+    "Width": 300,
+    "Height": 120,
+    "Theme": "Default",
+    "ShowInTaskbar": false,
+    "ShowMargin": false,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "content": "Please make sure you entered the number of employees correctly",
+        "key": "message",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "label": "OK",
+        "showValidations": false,
+        "disableOnInvalid": true,
+        "tableView": false,
+        "key": "submit",
+        "type": "button",
+        "input": true,
+        "saveOnEnter": false
+      }
+    ]
+  }
+}

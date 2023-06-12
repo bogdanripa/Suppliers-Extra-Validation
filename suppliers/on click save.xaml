@@ -1,0 +1,359 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="on_click_save" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uca="clr-namespace:UiPath.Callout.Activities;assembly=UiPath.Callout.Activities" xmlns:ufa="clr-namespace:UiPath.Forms.Activities;assembly=UiPath.Forms.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuat="clr-namespace:UiPath.UIAutomationNext.Activities.Triggers;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="TriggerEventArgs" Type="InArgument(uuat:MonitorClickEventArgs)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1884,3083</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>on_click_save_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Studio.Forms.Runtime</x:String>
+      <x:String>UiPath.Forms.Activities</x:String>
+      <x:String>UiPath.Platform.GlobalVariables</x:String>
+      <x:String>UiPath.Forms.Activities.Base</x:String>
+      <x:String>UiPath.Web</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Callout.Activities</x:String>
+      <x:String>UiPath.Callout.Activities.Base</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Forms.Runtime</AssemblyReference>
+      <AssemblyReference>UiPath.Forms.Activities</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Web</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.Callout.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="on_click_save" sap:VirtualizedContainerService.HintSize="1308,3018" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="errorMessage">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NClickTrigger BlockEvent="True" Button="Left" DisplayName="Click Event Trigger 'Save'" Enabled="True" sap:VirtualizedContainerService.HintSize="1246,201" sap2010:WorkflowViewState.IdRef="NClickTrigger_1" IncludeChildren="True" KeyModifiers="None" Mode="Down" SchedulingMode="Concurrent" TriggerId="26894f7a-559f-4f98-b9ec-0d3119218997" Version="V3">
+      <uix:NClickTrigger.Target>
+        <uix:TargetAnchorable BrowserURL="http://www.rpasamples.com/suppliers" DesignTimeRectangle="1246, 956, 117, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Save'" FullSelectorArgument="&lt;webctrl id='saveButton' tag='BUTTON' /&gt;" Guid="6752279a-946b-4034-8f60-888b23ac9f5c" InformativeScreenshot="7159e97ea0d7e9061e2b790912548be1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiPath Demo App' /&gt;" SearchSteps="Selector" Version="V2" />
+      </uix:NClickTrigger.Target>
+    </uix:NClickTrigger>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome UiPath Demo App" sap:VirtualizedContainerService.HintSize="1246,2666" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="80f479b8-cfc2-4499-97fe-64e7298a84ed" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1212,2449" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="nEmployeesTxt" />
+              <Variable x:TypeArguments="x:Int32" Name="nEmployeesInt" />
+              <Variable x:TypeArguments="ui:UiElement" Name="noEmpEl" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text 'No. Employees'" sap:VirtualizedContainerService.HintSize="1150,157" sap2010:WorkflowViewState.IdRef="NGetText_1" OutUiElement="[noEmpEl]" ScopeIdentifier="80f479b8-cfc2-4499-97fe-64e7298a84ed" TextString="[nEmployeesTxt]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="http://www.rpasamples.com/suppliers" ContentHash="lKMyo3u1Mkq-ZZdEdMi-KQ" DesignTimeRectangle="779, 468, 346, 30" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'No. Employees'" FullSelectorArgument="&lt;webctrl id='TextField610' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TextField610' tag='INPUT' type='text' class='ms-TextField-field field-146' aaname='No. Employees' /&gt;" Guid="5854ff91-136e-4883-a618-a2bafc023bd4" ImageBase64="" InformativeScreenshot="3ce2dca3fc04b65581d7269f5f57a060.png" IsResponsive="True" Reference="ET59uxnZm0aSJC4KCkQXNg/N6u1i9l54U2cd8E4dUzz1A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiPath Demo App' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="778, 439, 354, 28" ElementType="Text" FriendlyName="'No. Employees'" FullSelectorArgument="&lt;webctrl id='TextFieldLabel612' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TextFieldLabel612' tag='LABEL' type='' class='ms-Label root-152' aaname='No. Employees' check:innerText='No. Employees' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWYAAAAgCAYAAAAhUNLTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQ+SURBVHhe7dzLK31rHMfx8z8ZyMDUQHIpcsklSglTSWJgxkCSqeQ+kgwMUIgoAwNEcss9lIQQ4Xv6PFla++y9Fw6O5fzer1otz3r2s9azJx/P+u61918GAAgVghkAQoZgBoCQIZgBIGQIZgAIGYIZAEKGYAaAkCGYASBkCGYACBmCGQBChmAGgJCJCOaRkRFLTk62hYWFlyNmFxcXVlJS4vo+o7293RISEiI2nVfn/0pfNV8A+ClRwazArKmpsZubG3fsK4O5vr7e7u7uXo58D4IZwG8XFcx5eXmWk5Njs7Oz7hjBDAD/rahgVqh1dnZaVVWVXV5eRgXd8/Ozzc/PW25urltda6+2jgcJCubFxUV3nq6uLktNTbWkpCTr7e21mZkZy8zMdO3+/n57fHx043We5uZmN8fExEQ3Rq/VHN4736enJ/c+/XcHV1dXVllZ6cb6x+kautbu7q57XVDf6uqqlZaWvl5rfHzczRsA3itmMG9tbVl5eblNTExEBd3y8rKlpaXZ5OSkCxzt1dbxIG8Fs4Ksra3NhaTOqXZDQ4MLy+npacvIyLCdnZ3XYC4uLnYhqIAdGhqyrKwsOzg4+NB819fXLTs72zY2Ntxr1dYdg67jjVMAPzw8WHd3tzU1Ndn9/X3cvvPzcxfsPT09bl6Hh4e2tLTkzg0A7xUzmBVuCmWFjFaCXtAp2FpaWiIC1gtKHQ9aGcb68E+BLNor6BSIor3aXr+/7V1P5/Ocnp5afn6+K7/4g/mt+V5fX7sV88DAgOvTXn23t7fW0dER8Z62t7etrKzMhW28Ps1T4+vq6uzs7Mz1AcBHxQ1mlTF0i67bfS/oYoWiBK2GPW+tmD8TzP4w9v/9nvmOjY25f0AnJycupP3jUlJS3Mrc26qrq21zczNu3/7+vgt1lV1UXqmoqLC1tbWXqwLA+8QNZtEKtKCgwNVM1eetQL1betFebf8KMpbvDGavX4/5xVoxB8336OjIvcfh4WEXsDqXashaFfvHeYL6/NQ3ODhoRUVFrJ4BfEhgMKveq1Wkyg7qEy9E5+bmXLBpr7bqrsfHx+423nuiw++rg1nzUuBpharatFanqvH6g1mC5is61traaunp6RHz8+rIqkmrXqzzqowR1KfSSF9fn5uXV/smmAF8VGAwi1ah+tKJF3TxnnLQcd3m60M6BdI/KZj99WVtCjeF7r8JZtWUvTkolL2nIrRS1RMbmsfe3l7gfD36gM7/HsUbV1hY6Mbpw8XR0VEX5PH6FMwqY6jtXUtz9l8LAN4SEcy/QaxSxmetrKy4pzH0VAcA/LQ/PphVrmlsbHTlDK2GAeCn/dHBPDU15UoOtbW1rj4NAGHw64IZAP7vCGYACBmCGQBChmAGgJAhmAEgZAhmAAiZ12DWL6TpG3v6hTU2NjY2tq/flLHK2re8BrMG8CwvAHwfZWysn6yIZPY3R9aqegpXJLAAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <If Condition="[Not (Integer.TryParse(nEmployeesTxt, nEmployeesInt) AndAlso nEmployeesInt &gt; 0)]" sap:VirtualizedContainerService.HintSize="1150,2137" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="476,598" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[errorMessage]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">Please make sure that the No. Employees was correctly entered</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <uca:ShowCalloutActivity Height="{x:Null}" InstanceName="{x:Null}" Left="{x:Null}" Title="{x:Null}" Top="{x:Null}" TopMost="{x:Null}" UiElement="{x:Null}" Width="{x:Null}" WindowState="{x:Null}" ContinueOnError="True" DisplayName="Show Callout" FormId="63200d54-a4ce-49e6-be6a-5c1ab9351006" sap:VirtualizedContainerService.HintSize="434,261" sap2010:WorkflowViewState.IdRef="ShowCalloutActivity_1" IsAsync="True">
+                    <uca:ShowCalloutActivity.Arguments>
+                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                    </uca:ShowCalloutActivity.Arguments>
+                    <uca:ShowCalloutActivity.ShowInTaskbar>
+                      <InArgument x:TypeArguments="s:Nullable(x:Boolean)">
+                        <Literal x:TypeArguments="s:Nullable(x:Boolean)" Value="False" />
+                      </InArgument>
+                    </uca:ShowCalloutActivity.ShowInTaskbar>
+                    <uca:ShowCalloutActivity.ShowMargin>
+                      <InArgument x:TypeArguments="s:Nullable(x:Boolean)">
+                        <Literal x:TypeArguments="s:Nullable(x:Boolean)" Value="False" />
+                      </InArgument>
+                    </uca:ShowCalloutActivity.ShowMargin>
+                    <uca:ShowCalloutActivity.Target>
+                      <uix:TargetAnchorable BrowserURL="http://www.rpasamples.com/suppliers" DesignTimeRectangle="785, 575, 346, 30" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'qw'" FullSelectorArgument="&lt;webctrl id='TextField1689' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TextField1689' tag='INPUT' type='text' class='ms-TextField-field field-181' aaname='No. Employees' /&gt;" Guid="8b2b53ff-6e32-46c3-a771-e67dc1091b44" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAV4AAAAiCAYAAAAXvLEUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHXSURBVHhe7dqxThRBAMZxX0ntbOmUV/B8AdDeK6ikxxpDh6V0JPgKV5BQ0Vx75ZVXjvk2zOaykphsvKGY3y/5cjDstf9MNrwqADQ1hPfq9rEcnd2Xd8sHMzM7wNLYtHYMr+iamR1+ae0Y3noIwGHsd1Z4ARoQXoDGhBegMeEFaOxFw/v2zeunnwD6IbwAjQkvQGPCC9CY8AI0JrwAjQkvQGPCC9DY7PDudruyXH4d4pn9uLwsXz6flvV6XVar1fC3PBM5Wyw+Dp+x3W6HZ4UX6NGs8Nbo3tz8ejop5fvFRTn+8H6Iaw1rDW2eS2Tr8zk/P/8mvECXZoU34UxYE9hqGtuEODffyG345/X1cBYJcI0xQG9mhXf6KiGeu+UmtDnP52azGb6Tz9x285zwAj2aFd7nbrw523+PW5/5fXc3vmJIgPN7ApzvCi/Qo1nhTTQ/LRZjUCNRre94I7fh3GxPT07Gs9yU83t95SC8QI9mhTdqfBPPLDfZ/VcNkTBP/7shca7vfoUX6NHs8E4lxNPw/ovwAj0SXoDGhBegsf8W3jmEF+jRi4YXoEfCC9CY8AI0JrwAjf0V3qOz+/HQzMwOs7R2DO/V7aP4mpkdcGlsWjuGF4BWSvkDqIYeXMBnXUUAAAAASUVORK5CYII=" InformativeScreenshot="98c55c6243aef731e50492924088b6b7.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiPath Demo App' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="784, 546, 360, 28" ElementType="Text" FriendlyName="'No. Employees'" FullSelectorArgument="&lt;webctrl id='TextFieldLabel1691' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TextFieldLabel1691' tag='LABEL' type='' class='ms-Label root-152' aaname='No. Employees' check:innerText='No. Employees' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWwAAAAgCAYAAAA2ckIaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASQSURBVHhe7dvbK3RdHAfw949yIVfyXkgSSXLIIUpJyoVceJ0SKSE53UmUY0mK3sQVVy7oRcq55JDzIefC7+n7e2bt9hjjGWamrNf3U6vZs/bea69x8Z01v739JUREZAUGNhGRJRjYRESWYGATEVmCgU1EZAkGNhGRJRjYRESWYGATEVmCgU1EZAkGNhGRJRjYRESWcAL74eFBKioqpKCgQM7Ozjy9IgsLC5KQkCA7Ozuens8zY0dERHg19GFfKIVivkRE35FPYCNIR0ZGPL2hDey2tjZPT/gwsIno/8onsAsLCyUvL0+Ojo60n4FNRPQ9+AR2Q0ODvvb09Mjr66tPAF5dXUlTU5NERUVpwzb6PvKnwB4fH5eSkhLp7OyUmJgYiY2NlcnJSe3HNtrU1JTO5/LyUnJzc/XYrKws/UWA19XVVR0r0Pk+PT1JbW2ttLS0yPPzsx57cHAgqampOgb6JiYmJD4+Xs+rrKyU8/NzPc49JuY2MDCgx6ONjY1pX2RkpJSWlsrW1paeQ0QULJ/ARqjOz89rCO7t7XkFIEKuvr5eysvLNbzQsI0+7PMnkMBGwA0PD8vj46P09fVpEHd1den7/v5+XfVfXFw4gY2A39/f1+u2t7frL4Pr6+tPzXdubk6ys7Pl5ORE54H35jrT09OSkpIiGxsbOgec093d7WxXVVXJ7e2t7O7u6hhLS0uysrKi115eXpaXlxdZXFyU4+NjHZuIKFjvBrYJOgSUOwDX1tYkLi5O+wxsow/7/DFjm5uNaO5VMAIbIYwwBvc13743gY1zDFw7OTlZXz8zXwQ1whZBjdVxY2OjdHR0yP39vc4XK2cDX2JFRUUayunp6c7nxaq/tbVV/1a4ZlJSkgwNDWmwExGF0ruBDVglojwwODjoBODbIAVso88dim8FssIOJrDdc3Af+3YccB+LsEXQ1tXVaTkkJydH+801EhMTtc80rM5nZ2f110BaWprXvt7eXh0fq36UWqKjowMqFxERBcpvYGPFicApLi7WVSiCDqtKhB1+/hvYRp9Zcb4n3IGN/QjX7e1tr2MDmS9WzJmZmTI6Oir5+flaDjHzRZgj1N0wLkol7jHfg/JLWVmZV42ciCgYfgMbUL9F+cAEII6pqanR+i3qxWjYdteEsQo9PDz0jPBbOAIbXyY3NzdOXRrzwnXcx/5pvnB3d6fBisBHOcQEtKlhI5jRh6dmTk9PferiqFXjiwIlkPX1df0s2EZ9G8cwsIkoVD4MbAQNbvy5w9PfUxeAVSpquJubm/reMGO7a9hoJqS/EthYDeMJDpQnTHgCShsZGRlSXV2t4frRfA08gYJxcB0Dnx1PiaA2jrniJizq2IDzm5ub9YkWjInr4+YiyiEor6DfzMvc0CQiCpYT2LYwge0uiQRrZmbGecqEiOi7+vGBjTIH/h3f/d+dRETf0Y8ObDzZgdIFyhuoZRMRfWfWBTYR0U/FwCYisgQDm4jIEgxsIiJLMLCJiCzBwCYisoQT2D3/rsvf1f9J1D8rbGxsbGxhaMhYZO1XOYHNsGZjY2MLf0PWfo3IL0i9H+hJH65oAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uca:ShowCalloutActivity.Target>
+                  </uca:ShowCalloutActivity>
+                  <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set Focus" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="SetFocus_2">
+                    <ui:SetFocus.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[noEmpEl]" Id="b3e39312-86db-4a6d-8b8a-5d08c9470194">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:SetFocus.Target>
+                  </ui:SetFocus>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="1116,1357" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="addressTxt" />
+                    <Variable x:TypeArguments="x:String" Name="cityTxt" />
+                    <Variable x:TypeArguments="x:String" Name="stateTxt" />
+                    <Variable x:TypeArguments="x:String" Name="zipTxt" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Parallel sap:VirtualizedContainerService.HintSize="1074,1019" sap2010:WorkflowViewState.IdRef="Parallel_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence sap:VirtualizedContainerService.HintSize="450,972" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="ui:UiElement" Name="addressEl" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NGetText DisplayName="Get Text 'Address'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_2" OutUiElement="[addressEl]" ScopeIdentifier="80f479b8-cfc2-4499-97fe-64e7298a84ed" TextString="[addressTxt]" Version="V3">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="http://www.rpasamples.com/suppliers" DesignTimeRectangle="391, 744, 723, 30" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT TextField815'" FullSelectorArgument="&lt;webctrl id='TextField815' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TextField815' tag='INPUT' type='text' class='ms-TextField-field field-146' aaname='Address' /&gt;" Guid="a0f835a0-53a5-4265-9323-72192a2ee1c0" InformativeScreenshot="38e8fed0098ab3854eda09725b300b62.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiPath Demo App' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="390, 715, 725, 28" ElementType="Text" FriendlyName="'Address'" FullSelectorArgument="&lt;webctrl id='TextFieldLabel817' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TextFieldLabel817' tag='LABEL' type='' class='ms-Label root-152' aaname='Address' check:innerText='Address' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAtkAAAAgCAYAAADHT2RmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOgSURBVHhe7dzPS1VpGAfw+Z9aRMsCQSMIQQgjdAw3kwxB0SLahSuDCA1bRatctGvbT2bEoEVRbopAQUSpTfmrMtOe4Xm759LVrs4wB0aGzwcejud5z73X5ZeX57y/BAAAUCshGwAAaiZkAwBAzYRsAAComZANAAA1E7IBAKBmQjYAANRMyAYAgJoJ2QAAUDMhGwAAaiZkAwBAzXaE7Hfv3kVvb2+cO3cuPn782Oju9OHDh+jv74+7d+82Oq32WgcAgP+rHSF7amoqurq64vjx4/HmzZtGdychGwAAfq4lZH/79i2uX78eY2NjcenSpV0DspANAAA/1xKy379/HwMDAzE5ORkTExMlaH/+/LmsZQC/d+9eHD16NA4ePBiDg4PR2dnZDNF7ref17NmzceXKlTh06FC5X1xcjAsXLpTnu7u7y+fze9bX1+PGjRtx+PDh8uzly5fLGEu7PgAA7CctIfvly5dx8uTJWFhYiGfPnkVPT0/Mz8+Xtenp6Th27Fg8evQotra24sWLF+W+CtF7ref1wIEDMT4+Hl++fInl5eUYGhpq3j9//rzsfOfvPXjwIE6cOFH+j1x78uRJrK6utu0DAMB+0hKyb9682dy9rl6AzGCbu8vXrl1r2dn+cRxkr/WU1/y+auc5Q3wG+ur+06dPcfHixfJ7T58+LXPhDx8+jM3NzbKe2vUBAGA/aYbsPEkkTxTJ3eYfa2RkJNbW1kqAHh0dbTzdGqIzWO+2nvKa99mv7nPkI4N2X19fs+7fv19C+6tXr+L8+fNx5MiRuHXrVhkVadcHAID9pBmyX79+Xeai81rJXeXcfc7Z6Qzbw8PDsbGxUdZ+DNG5q7zbetoesrePo7QzNzdXPnfnzp1G57t2fQAA+K81Q3aG1TNnzsTKykqjEzE7O1uO8stj/XKHuaOjo8xB58x1zl7nC4hViN5rfXvIrmayc8wkR0VyxnpmZqYE9hwLefz4cfn77du3cfr06fL/tesDAMB+UkJ2Ne6Rx/flSEalGiHJ/tevX+P27dstJ3vkCSJViM7gu9v69pCdcoc857Dz+fzc1atXY2lpqYyE5Kkj2c/Kfr7g+LN+jrIAAMB+0vLiIwAA8O8J2QAAUDMhGwAAaiZkAwBAzYRsAAComZANAAA1E7IBAKBmQjYAANRMyAYAgJo1Q/bkn3/E70O/xa99p5RSSimllFL/oDJHZ56uNEN2LszOzjTuAACAvytzdObp7yL+Ajg6hjE43WABAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                      <ufa:ShowFormActivity InstanceName="{x:Null}" ShowInTaskbar="{x:Null}" Title="{x:Null}" WindowState="{x:Null}" DisplayName="Show Form" FormId="59fa41df-b4d3-4c41-9072-9b5ad93cb102" sap:VirtualizedContainerService.HintSize="388,186" sap2010:WorkflowViewState.IdRef="ShowFormActivity_2" IsAsync="False" Left="[addressEl.GetAbsolutePosition.Left + addressEl.GetAbsolutePosition.Width]" Top="[addressEl.GetAbsolutePosition.Top-50]">
+                        <ufa:ShowFormActivity.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="address">[addressTxt]</InArgument>
+                        </ufa:ShowFormActivity.Arguments>
+                        <ufa:ShowFormActivity.Height>
+                          <InArgument x:TypeArguments="s:Nullable(x:Int32)">
+                            <Literal x:TypeArguments="s:Nullable(x:Int32)" Value="120" />
+                          </InArgument>
+                        </ufa:ShowFormActivity.Height>
+                        <ufa:ShowFormActivity.ShowMargin>
+                          <InArgument x:TypeArguments="s:Nullable(x:Boolean)">
+                            <Literal x:TypeArguments="s:Nullable(x:Boolean)" Value="False" />
+                          </InArgument>
+                        </ufa:ShowFormActivity.ShowMargin>
+                        <ufa:ShowFormActivity.TopMost>
+                          <InArgument x:TypeArguments="s:Nullable(x:Boolean)">
+                            <Literal x:TypeArguments="s:Nullable(x:Boolean)" Value="True" />
+                          </InArgument>
+                        </ufa:ShowFormActivity.TopMost>
+                        <ufa:ShowFormActivity.Width>
+                          <InArgument x:TypeArguments="s:Nullable(x:Int32)">
+                            <Literal x:TypeArguments="s:Nullable(x:Int32)" Value="350" />
+                          </InArgument>
+                        </ufa:ShowFormActivity.Width>
+                      </ufa:ShowFormActivity>
+                    </Sequence>
+                    <Sequence sap:VirtualizedContainerService.HintSize="450,972" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NGetText DisplayName="Get Text 'City'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="80f479b8-cfc2-4499-97fe-64e7298a84ed" TextString="[cityTxt]" Version="V3">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="http://www.rpasamples.com/suppliers" DesignTimeRectangle="391, 902, 229, 30" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT TextField821'" FullSelectorArgument="&lt;webctrl id='TextField821' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TextField821' tag='INPUT' type='text' class='ms-TextField-field field-146' aaname='City' /&gt;" Guid="b2004260-0612-468e-bda7-386d688a4a1b" InformativeScreenshot="600f6f8171556c32980acd27e47968a5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiPath Demo App' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="390, 873, 231, 28" ElementType="Text" FriendlyName="'City'" FullSelectorArgument="&lt;webctrl id='TextFieldLabel823' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TextFieldLabel823' tag='LABEL' type='' class='ms-Label root-152' aaname='City' check:innerText='City' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOsAAAAgCAYAAADzJY+iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJYSURBVHhe7dq9ayJBHMbx+58sgqV2gmhEBQtfrrDwlGsEK1ubELRQsLO1sLPQkPLusEgRUiSBIChIiIggvoAERPOE39y6aEg4j0xyN/B8YMAdXbsvM477BURkBMZKZAjGSmQIxkpkCMZKZAjGSmQIxkpkCMZKZAjGSmQIxkpkCMZKZIi9WJ+ennB7e4tMJoOjoyO4XC4Ui0XMZjNsNhvc3d1hNBpZnyaiz7QX68XFBbxeL1qtFtbrNSaTCUqlEnq9HobDIaLRKE5PT7FarTCdTpFIJHB5eWndTUQfyY51uVwil8uhWq2qUP9EQo7FYoyV6JPYsQ4GAwQCgTfje3x8RD6fR7lcRr/fVyuww+FQQ16fnZ3B7/ej2+1adwC1Wk3dI/cS0fvYsUqkEp2E+JrdWMU22G3csjJns1k0Go2962azqa6J6H20xSokVAlUQpXDqEgk8ub3EdHfsWOVQySfz3fQNli8Fuv9/b0K9Pr6WoXLLTCRPgcfMB0Sq5wSFwoFVCoV9VlugYn0sWMVL/+6mc/nODk5UQdFEvNurA8PDwiFQmi32yrSbeCdTgcejwfBYJBbYCKN9mKVhyIk2GQyqU55dx+KeLmySpz1eh1OpxNutxs3NzdqXgJPpVLcAhNptherDovFAul0Gufn59YMEemgNVZZmeV3ajwex3g8tmaJSAdtscrjiOFwGMfHx7i6urJmiUgX7dtgIvoYjJXIEIyVyBCMlcgQjJXIEIyVyBB2rL9+/sD3zDd8jUc5ODj+gyE9SpdbdqzyRr/fs66I6F+THqXL34BnH0bAUJZA1YsAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                      <uix:NGetText DisplayName="Get Text 'State'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="80f479b8-cfc2-4499-97fe-64e7298a84ed" TextString="[stateTxt]" Version="V3">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="http://www.rpasamples.com/suppliers" DesignTimeRectangle="638, 902, 229, 30" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT TextField824'" FullSelectorArgument="&lt;webctrl id='TextField824' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TextField824' tag='INPUT' type='text' class='ms-TextField-field field-146' aaname='State' /&gt;" Guid="342e5a0f-f04d-4d44-9206-87e97dd9db05" InformativeScreenshot="afa7060755bb556899826c803a958d34.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiPath Demo App' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="637, 873, 231, 28" ElementType="Text" FriendlyName="'State'" FullSelectorArgument="&lt;webctrl id='TextFieldLabel826' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TextFieldLabel826' tag='LABEL' type='' class='ms-Label root-152' aaname='State' check:innerText='State' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOsAAAAgCAYAAADzJY+iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALnSURBVHhe7dnPS2JRGMbx+Z9ahMs2LaSN2KYYdZBABhkKokVIIJHhSsSFYdCiRbSLWlaSzMxCXBSEtEhUUEs0ioiiCKx3eN68F29N5DBBHXg+cKl7z41WX88PvwgRGYGxEhmCsRIZgrESGYKxEhmCsRIZgrESGYKxEhmCsRIZgrESGYKxEhnCEevFxYXEYjFxuVwyODgooVBICoWCPD4+dt8goo9ix3p/f6+hzs3NydXVlXQ6HcnlcrK6uqq/b21tSSQSkbu7u+5fvK5arYrf79efRPQ+7FgvLy8lEAjIxsZG94kTnvcba6VSEZ/Px1iJ3pFjZp2fn5dgMCi1Wq379EkqlZKBgQH7wj2WzEtLSzI8PKxL5tnZWX22v7/veBcfAPggaDabMjMzo+96PB7Z2dnh8proHzj2rK1WS6ampjQohFUul+2gEGjvzHp6eirb29tyfX0tZ2dnGvnKyoqOIdiRkRF7ZsWyOhwOSzqd1g+Fg4MDjbjRaOg4Eb3NESs8PDzI0dGRTE5OarTLy8u6Z30eqwVj5+fnEo1G7fHnseJ+fHxc2u223t/e3upMnM1m9Z6I3vYiVgui3dzcFLfbLaVS6UWsNzc3kslk9CBpbW1N43stVhxO4YQZweJ969rd3dVxInqbHSuWu1ii9kJsiA7x9caK2TSRSOhsasXbO/63mXV0dJTLXqL/YMd6eHgoXq9X9vb2NEaEu76+rqe62JNiP4rvXXGIhFl1YWFBFhcX9T0cSGHPasVaLBb14AmRYhwHTNizJpNJXQLjGU6M8X+IqD92rFj25vN5DRJ7VVzT09NyfHys4/V6XSYmJvSENx6P674W99ZhVO/MigszL8bGxsbk5ORET4OxVMZyeGhoSMdx8ERE/Xl1z0pEnwtjJTIEYyUyBGMlMgRjJTIEYyUyBGMlMgRjJTIEYyUyhB3r718/5Uf4u3zzf+XFi9cnuNAjurTYsWKgWq1074joo6FHdPlE5A8TLYKIN4aOFgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                      <uix:NGetText DisplayName="Get Text 'Zip'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="80f479b8-cfc2-4499-97fe-64e7298a84ed" TextString="[zipTxt]" Version="V3">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="http://www.rpasamples.com/suppliers" DesignTimeRectangle="885, 902, 229, 30" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT TextField827'" FullSelectorArgument="&lt;webctrl id='TextField827' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TextField827' tag='INPUT' type='text' class='ms-TextField-field field-146' aaname='Zip' /&gt;" Guid="d7299a21-5a8e-43dc-b3a7-6665dd7a13b0" InformativeScreenshot="8975d63b781405017f24c1f3f0b6c0e3.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiPath Demo App' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="884, 873, 231, 28" ElementType="Text" FriendlyName="'Zip'" FullSelectorArgument="&lt;webctrl id='TextFieldLabel829' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TextFieldLabel829' tag='LABEL' type='' class='ms-Label root-152' aaname='Zip' check:innerText='Zip' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOsAAAAgCAYAAADzJY+iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH1SURBVHhe7do/ayJBGIDx+04WfgZFFFuR8xAEQzgsrOxsrLQTa1tbCyur5CoLG0GwcUUQsVBERERQ3+PdTBaNeySEjZeB5wfDyrhbPszsnx8CwArECliCWAFLECtgCWIFLEGsgCWIFbAEsQKWIFbAEsQKWIJYAUt4sa7Xa8lkMhIKha5GIpGQ6XQqi8VCRqORnE4ncwWAe/rnyrpcLiWXy0mz2ZTD4SDValXS6bTM53NzBoB78o31fD5Lq9WSVCrlrqgA/j/fWCeTiSSTSWm322ZG3N+6Tdbt8uuWudFouKutbpf1OBwOzdkAgnYT6/F4lFqtJsViUbbbrZn1j7VQKMhsNnO3yfV6XfL5vGw2G3MFgCDdxDoYDCQSiUiv1zMzL/xivVx59eGTrsZ6BBC8q1h3u52USiWpVCruannpvVgdx5FYLCb9ft/MAAjSVazdbtd9VaPhvfVerBppPB6X8XhsZgAEyYv18lWNPg1+yy9WvbfV+9rVauWuyOVyWfb7vbkCQJC8WDudzs0HETp0a6srrV+s2WxWotGohMNhN1aNFsDXuHnA9BF+22AAX4tYAUsQK2CJT8UK4P6IFbAEsQKWIFbAEsQKWIJYAUt4sf55fpLfjw/y62eawWB8g6E9apevvFj1D8fhI3zgu9AetcsXIn8B/AfOEu0JpV0AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                      <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                      <ufa:SetFormFieldsActivity InstanceName="{x:Null}" DisplayName="Set Form Values" FormId="59fa41df-b4d3-4c41-9072-9b5ad93cb102" sap:VirtualizedContainerService.HintSize="388,140" sap2010:WorkflowViewState.IdRef="SetFormFieldsActivity_1">
+                        <ufa:SetFormFieldsActivity.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="city">[cityTxt]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="state">[stateTxt]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="zip">[zipTxt]</InArgument>
+                        </ufa:SetFormFieldsActivity.Arguments>
+                      </ufa:SetFormFieldsActivity>
+                    </Sequence>
+                  </Parallel>
+                  <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="1074,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  <ui:ReplayUserEventV2 DisplayName="Replay User Event" EventInfo="[TriggerEventArgs.Event]" sap:VirtualizedContainerService.HintSize="1074,80" sap2010:WorkflowViewState.IdRef="ReplayUserEventV2_1" />
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="2552, 347, 1936, 1056" BrowserType="Chrome" ContentHash="lSxtSVEWUkSaW-7ESuOe2A" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADBSURBVDhPzdOhCsJgFIbhFUEMYh2YzF6Fd2A1aTrR6DUYrUYtKhazdmU3YDAcELwEMcl8zzgzyGRuKx544Pt39n+wsCAQjSvxcMW6ILvzLtgERcfuFCoQbSLCzM8ZBaJHLJOcjugZc4S4Y+/PMwtuOCQ5HdEHdp67CD2XKnhi6/lPCy6IkmwjWoddWvk5t2ABe2mANqaw/dj3uQUd2GfYs9QJDd/nFNiItjDEBH3UfGO7EXqevxT8Oh8FlX+mkjR+AQjvbVASQHEjAAAAAElFTkSuQmCC" InformativeScreenshot="763e2c1debf40c7d90be3c94c194dd3f.jpg" Reference="ET59uxnZm0aSJC4KCkQXNg/xEvcFyq3nUWwDMCgJl9NzQ" Selector="&lt;html app='chrome.exe' title='UiPath Demo App' /&gt;" Title="UiPath Demo App" Url="http://www.rpasamples.com/suppliers" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

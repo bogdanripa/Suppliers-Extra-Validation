@@ -1,0 +1,106 @@
+﻿<!-- form
+{
+  "Metadata": {
+    "Id": "59fa41df-b4d3-4c41-9072-9b5ad93cb102",
+    "Kind": "Html"
+  }
+}
+-->
+<html>
+    <head>
+        <style>
+            #loaded {
+                display: none;
+            }
+
+            #loading {
+                margin-top: 12px;
+                text-align: center;
+            }
+
+            body {
+                font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #555555;
+                background-color: #ffffff;
+            }
+
+            input {
+                border-color: rgb(0, 103, 223);
+                border-width: 1px;
+                border-radius: 4px;
+                color: #ffffff;
+                text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+                background-color: #1976D2;
+                margin-top: 24px;
+                margin-right: 10px;
+                font-weight: 400;
+                padding: 8px 12px;
+                line-height: 20px;
+            }
+        </style>
+        <script type="text/javascript">
+            var adr = {opened: false};
+			var uiPathApi = {
+                getValue: function (elementId) {
+                    // this is a callback, being called from the workflow
+                    // enter your own code to get element values
+                    var el = document.getElementById(elementId);
+                    if (!el) {
+                        return adr[elementId];
+                    } else if (el.value == undefined) {
+                        return el.innerHTML;
+                    } else {
+                        if (el.checked == undefined) {
+                            return el.value;
+                        } else {
+                            return el.checked;
+                        }
+                    }
+                },
+        
+                setValue: function (elementId, value) {
+                    // this is a callback, being called from the workflow
+                    // enter your own code to set element values
+                    var el = document.getElementById(elementId);
+                    if (!el) {
+                        adr[elementId] = value;
+                    } else if (el.value == undefined) {
+                        el.innerHTML = value;
+                    } else {
+                        if (el.checked == undefined) {
+                            el.value = value;
+                        } else {
+                            el.checked = value;
+                        }
+                    }
+                    if ('address' in adr && 'city' in adr && 'state' in adr && 'zip' in adr && !adr.opened) {
+                        adr.opened = true;
+                        uiPathApi.sendMessage('opened');
+                    }
+                    if (elementId == 'message') {
+                        document.getElementById('loading').style.display = 'none';
+                        document.getElementById('loaded').style.display = 'inline';
+                    }
+                },
+        
+                // Call this to trigger a "Form Message" event
+                // This function is set by the forms engine after the page loads,
+                // but declaring it here as empty helps with code autocompletion
+                sendMessage: function (id, value) { },
+			};
+            
+	    </script>
+
+    </head>
+    <body>
+        <div id="loading">Checking address validity...</div>
+        <div id="loaded">
+            <div style="font-weight: bold;">Updated address:</div>
+            <div id="message"></div>
+            <input type="button" value="Update" onclick="uiPathApi.sendMessage('update')"/>
+            <input type="button" value="Cancel" onclick="uiPathApi.sendMessage('cancel')"/>
+        </div>
+    </body>
+</html>

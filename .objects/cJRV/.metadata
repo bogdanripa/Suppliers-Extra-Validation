@@ -1,0 +1,11 @@
+﻿{
+  "Id": "cJRVELVamE6q5FmeSxQm_g",
+  "Reference": "ET59uxnZm0aSJC4KCkQXNg/cJRVELVamE6q5FmeSxQm_g",
+  "Name": "Suppliers",
+  "Type": "App",
+  "Created": "2023-06-07T14:39:54.9020143Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-06-07T14:39:54.9020143Z"
+}
